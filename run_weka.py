@@ -69,7 +69,7 @@ def get_classifier_train_options(classifier_name: str) -> list:
         s = (
             CLASSIFIER[classifier_name]
             + " -- -P 100 -I 100"
-            + "-num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1"
+            + " -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1"
         )
         return s.split(" ")
 
